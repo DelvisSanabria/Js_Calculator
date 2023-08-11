@@ -1,0 +1,118 @@
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  font-family: sans-serif;
+  background-color: #f4f5fe;
+  justify-content: center;
+  justify-items: center;
+}
+body .calculatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+body .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+body .calculator {
+  width: 90vw;
+  height: 80vh;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .calculator .calScreen {
+  display: flex;
+  height: 120px;
+  margin: 5px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 15px;
+  background-color: #f0eeee;
+  pointer-events: none;
+}
+body .calculator .calScreen .calculatorInput {
+  outline: none;
+  border: none;
+  width: 97%;
+  background-color: #f0eeee;
+  height: 110px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: right;
+  color: #000e1a;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .calculator .calPad {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  margin: 5px;
+  padding: 10px;
+}
+body .calculator .calPad .operators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .calculator .calPad .operators button {
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(62, 67, 116, 0.6901960784);
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3e4374;
+}
+body .calculator .calPad .operators button:active {
+  transform: scale(0.95);
+}
+body .calculator .calPad .numbers {
+  display: grid;
+  grid-template-rows: 1fr 50px;
+}
+body .calculator .calPad .numbers .oneNine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body .calculator .calPad .numbers .oneNine button {
+  padding: 15px;
+  margin: 6px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(62, 67, 116, 0.6901960784);
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3e4374;
+}
+body .calculator .calPad .numbers .oneNine button:active {
+  transform: scale(0.95);
+}
+body .calculator .calPad .numbers .extrabts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+body .calculator .calPad .numbers .extrabts button {
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(62, 67, 116, 0.6901960784);
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3e4374;
+}
+body .calculator .calPad .numbers .extrabts button:active {
+  transform: scale(0.95);
+}
+body .calculator .calPad .buttonOperator, body .calculator .calPad .buttonAction {
+  color: #f7fbfa;
+}/*# sourceMappingURL=Calculator.css.map */

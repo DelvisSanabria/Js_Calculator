@@ -1,0 +1,100 @@
+body
+  display: grid
+  grid-template-rows: 100px 1fr
+  font-family: sans-serif
+  background-color: #f4f5fe
+  justify-content: center
+  justify-items: center
+  .calculatorContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 500px
+  .title
+    display: flex
+    justify-content: center
+    align-items: center
+    font-style: italic
+  .calculator
+    width: 90vw
+    height: 80vh
+    border: 1px solid #333
+    border-radius: 15px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    .calScreen
+      display: flex
+      height: 120px
+      margin: 5px
+      padding: 10px
+      justify-content: center
+      align-items: center
+      border: 1px solid #333
+      border-radius: 15px
+      background-color: #f0eeee
+      pointer-events: none
+      .calculatorInput
+        outline: none
+        border: none
+        width: 97%
+        background-color: #f0eeee
+        height: 110px
+        font-size: 2.5rem
+        font-weight: bolder
+        text-align: right
+        color: #000e1a
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    .calPad
+      display: grid
+      grid-template-rows: 70px 1fr
+      margin: 5px
+      padding: 10px
+      .operators
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        button
+          padding: 15px
+          margin: 5px
+          border: none
+          border-radius: 15px
+          background-color: #3e4374b0
+          font-size: 1.5rem
+          cursor: pointer
+          outline: none
+          border: 1px solid #3e4374
+        button:active
+          transform: scale(0.95)
+      .numbers
+        display: grid
+        grid-template-rows: 1fr 50px
+        .oneNine
+          display: grid
+          grid-template-columns: repeat(3,1fr)
+          button
+            padding: 15px
+            margin: 6px
+            border: none
+            border-radius: 15px
+            background-color: #3e4374b0
+            font-size: 1.5rem
+            cursor: pointer
+            outline: none
+            border: 1px solid #3e4374
+          button:active
+            transform: scale(0.95)
+        .extrabts
+          display: grid
+          grid-template-columns: repeat(5,1fr)
+          button
+            padding: 15px
+            margin: 5px
+            border: none
+            border-radius: 15px
+            background-color: #3e4374b0
+            font-size: 1.5rem
+            cursor: pointer
+            outline: none
+            border: 1px solid #3e4374
+          button:active
+            transform: scale(0.95)
+      .buttonOperator, .buttonAction
+        color: #f7fbfa

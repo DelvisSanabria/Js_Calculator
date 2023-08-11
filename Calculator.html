@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevCalculator</title>
+  <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+  <section class="title"><h1>Super Awesome Calculator</h1></section>
+  <section class="calculatorContainer">
+    <div name="Calculator" class="calculator">
+      <div class="calScreen">
+        <div>
+          <input class="calculatorInput" id="input" type="text" readonly>
+        </div>
+      </div>
+      <div class="calPad">
+        <div name="Operators" class="operators">
+          <button class="buttonOperator" id="plus">+</button>
+          <button class="buttonOperator" id="minus">-</button>
+          <button class="buttonOperator" id="Mutiplier">*</button>
+          <button class="buttonOperator" id="division">/</button>
+        </div>
+        <div name="numbers" class="numbers">
+          <div name="1-9" class="oneNine">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+          </div>
+          <div name="0-()&&send" class="extrabts">
+            <button class="button">0</button>
+            <button class="buttonOperator">(</button>
+            <button class="buttonOperator">)</button>
+            <button class="buttonAction">C</button>
+            <button class="buttonAction">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="./Caculator.js"></script>
+</html>
